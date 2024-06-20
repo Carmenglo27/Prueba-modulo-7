@@ -3,8 +3,19 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
+  <Contador />
   <router-view/>
 </template>
+
+<script>
+import Contador from '@/components/Contador.vue'
+export default {
+  name: 'App',
+  components: {
+    Contador
+  } 
+}
+</script>
 
 <style>
 #app {
